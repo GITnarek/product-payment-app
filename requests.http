@@ -1,0 +1,34 @@
+### Calculate Price
+POST http://127.0.0.1:8337/calculate-price
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": 1,
+  "taxNumber": "DE123456789",
+  "couponCode": "P100"
+}
+
+### Execute Purchase Stripe
+POST http://127.0.0.1:8337/purchase
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": 1,
+  "taxNumber": "IT12345678900",
+  "couponCode": "P10",
+  "paymentProcessor": "stripe"
+}
+
+### Execute Purchase Paypal
+POST http://127.0.0.1:8337/purchase
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": 1,
+  "taxNumber": "IT12345678900",
+  "couponCode": "P100",
+  "paymentProcessor": "paypal"
+}
