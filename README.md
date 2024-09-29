@@ -1,4 +1,4 @@
-# Symfony Docker Project
+# Product Payment App
 
 This is a Symfony-based application, containerized with Docker for easy setup and deployment. The project is built to run on a LEMP stack (Linux, Nginx, MySQL, PHP) using Docker Compose.
 
